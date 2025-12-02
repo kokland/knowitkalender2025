@@ -11,7 +11,7 @@ public class Oppgave01
 
     public static void Solve()
     {
-        var logg = File.ReadAllLines("./01/logg.txt");
+        var logg = File.ReadAllLines("01/logg.txt");
 
         var gaver = new List<string>();
         var løsning = new StringBuilder();
@@ -46,6 +46,6 @@ public class Oppgave01
             }
         }
 
-        Console.WriteLine(løsning.ToString());
+        Console.WriteLine("01 - " + løsning);
     }
 }

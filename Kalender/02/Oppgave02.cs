@@ -6,8 +6,9 @@ public static class Oppgave02
 
     public static void Solve()
     {
-        var linjer = File.ReadAllLines("./02/logg.txt");
+        var linjer = File.ReadAllLines("02/logg.txt");
         var teller = -1;
+        var result = string.Empty;
         foreach (var linje in linjer)
         {
             var chars = linje.ToCharArray();
@@ -17,9 +18,11 @@ public static class Oppgave02
                 output += RotateChar(c, teller);
             }
 
-            Console.Write(output);
+            result += output;
             teller--;
         }
+        
+        Console.WriteLine("02 - " + result);
     }
 
     private static char RotateChar(char c, int rotateBy)
