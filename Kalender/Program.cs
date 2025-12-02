@@ -1,6 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-using System.Globalization;
 using Kalender._01;
 using Kalender._02;
 
