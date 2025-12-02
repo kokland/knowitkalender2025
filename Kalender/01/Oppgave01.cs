@@ -9,7 +9,7 @@ public class Oppgave01
     // PROCESS - Den gaveordren som har ventet lengst blir produsert. Den første bokstaven i gaven er en del av nøkkelen. Hvis ingen gaver er i kø, legges det til en X
     // COUNT - Julegavemaskinen viser hvor mange gaver som venter på å bli produsert. Det sist sifferet i dette tallet er del av nøkkelen.
 
-    public void Solve()
+    public static void Solve()
     {
         var logg = File.ReadAllLines("./01/logg.txt");
 
