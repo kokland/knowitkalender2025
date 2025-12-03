@@ -13,7 +13,8 @@ public class Oppgave01
     {
         var logg = File.ReadAllLines("01/logg.txt");
 
-        var gaver = new List<string>();
+        // var gaver = new List<string>();
+        var gaver = new Queue<string>();
         var løsning = new StringBuilder();
 
         foreach (var linje in logg)
@@ -21,7 +22,7 @@ public class Oppgave01
             if (linje.StartsWith("ADD"))
             {
                 var gave = linje.Split(" ").Last();
-                gaver.Add(gave);
+                gaver.Enqueue(gave);
                 continue;
             }
 
@@ -33,19 +34,11 @@ public class Oppgave01
 
             if (linje == "PROCESS")
             {
-                if (gaver.Count == 0)
-                {
-                    løsning.Append("X");
-                }
-                else
-                {
-                    var gave = gaver.First();
-                    løsning.Append(gave[0]);
-                    gaver.RemoveAt(0);
-                }
+                var item = gaver.TryDequeue(out var gave) ? gave[0] : 'X';
+                løsning.Append(item);
             }
         }
 
-        Console.WriteLine("01 - " + løsning);
+        Console.WriteLine($"{nameof(Oppgave01)}: {løsning}");
     }
 }
