@@ -16,4 +16,3 @@ jobs:
       - run: dotnet publish --configuration Release --output ./publish
       - run: dotnet Kalender.dll
         working-directory: ./publish
-        

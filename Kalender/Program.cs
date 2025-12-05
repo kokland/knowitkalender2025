@@ -3,7 +3,9 @@
 using Kalender._01;
 using Kalender._02;
 using Kalender._03;
+using Kalender._04;
 
 Oppgave01.Solve();
 Oppgave02.Solve();
 Oppgave03.Solve();
+Oppgave04.Solve();
