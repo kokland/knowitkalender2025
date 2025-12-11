@@ -6,6 +6,7 @@ using Kalender._03;
 using Kalender._04;
 using Kalender._05;
 using Kalender._09;
+using Kalender._10;
 
 Oppgave01.Solve();
 Oppgave02.Solve();
@@ -14,3 +15,4 @@ Oppgave04.Solve();
 Oppgave05.Solve();
 
 Oppgave09.Solve();
+Oppgave10.Solve();
