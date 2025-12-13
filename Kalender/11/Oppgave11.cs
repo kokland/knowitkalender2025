@@ -1,15 +1,15 @@
-namespace Kalender._12;
+namespace Kalender._11;
 
-public class Oppgave12
+public class Oppgave11
 {
     public static void Solve()
     {
-        var data = File.ReadAllLines("12/input.txt");
+        var data = File.ReadAllLines("11/input.txt");
         // data = ["20", "dukke,5,30", "lego,10,50", "sokker,8,40", "klementin,4,10"];
         var maksGlede = MaksGlede(data);
         var maksFractional = MaxJoyFractional(int.Parse(data[0]), LastPakker(data));
 
-        Console.WriteLine($"{nameof(Oppgave12)}: {maksGlede} og {maksFractional}");
+        Console.WriteLine($"{nameof(Oppgave11)}: {maksGlede} og {maksFractional}");
     }
 
     private static double MaxJoyFractional(int capacity, IEnumerable<Pakke> pakker)
