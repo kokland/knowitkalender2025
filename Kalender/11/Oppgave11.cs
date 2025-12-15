@@ -53,7 +53,7 @@ public class Oppgave11
                 dp[c] = Math.Max(dp[c], dp[c - pakke.Vekt] + pakke.Glede);
             }
         }
-
+        
         return dp[capacity];
     }
 
